@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Inquiries | gdfashion.style</title>
+  <link rel="icon" type="image/png" href="faviconlogo.png">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      background-color: #fdfdfd;
+      color: #111;
+      text-align: center;
+    }
+
+    /* --- NAVBAR --- */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 50px;
+      background: #fff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .brand {
+      font-weight: bold;
+      font-size: 1.5em;
+      color: #38b6ff;
+      text-transform: lowercase;
+    }
+
+    .menu {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 30px;
+    }
+
+    .menu a {
+      text-decoration: none;
+      color: #111;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    .menu a:hover {
+      color: #38b6ff;
+    }
+
+    /* --- CONTENT --- */
+    h1 {
+      margin-top: 100px;
+      color: #38b6ff;
+      font-size: 2em;
+    }
+
+    p {
+      color: #555;
+      font-size: 1.1em;
+      margin-bottom: 40px;
+    }
+
+    /* --- EMBED FORM --- */
+    .form-container {
+      display: flex;
+      justify-content: center;
+      padding-bottom: 80px;
+    }
+
+    iframe {
+      width: 100%;
+      max-width: 640px;
+      height: 1000px;
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+
+    @media (max-width: 700px) {
+      iframe {
+        height: 1200px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- NAVIGATION -->
+  <nav class="navbar">
+    <div class="brand">gdfashion.style</div>
+    <ul class="menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="contact.html">Inquiries</a></li>
+    </ul>
+  </nav>
+
+  <!-- PAGE CONTENT -->
+  <h1>Business Inquiries</h1>
+  <p>For collaborations, partnerships, or media requests, please fill out the form below.</p>
+
+  <div class="form-container">
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfr7cfP_ExGH8Ns1Y0r9qr0SqQrb4Jl8jvyadB-jVjjIlioVQ/viewform?embedded=true" 
+      frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+  </div>
+</body>
+</html>
