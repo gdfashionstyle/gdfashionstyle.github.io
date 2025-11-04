@@ -1,23 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="icon" type="image/png" href="faviconlogo.png">
   <meta charset="UTF-8">
   <title>gdfashion.style</title>
+  <link rel="icon" type="image/png" href="faviconlogo.png">
+
   <style>
+    /* --- GLOBAL --- */
     body {
+      margin: 0;
       font-family: 'Helvetica Neue', Arial, sans-serif;
       background-color: #fdfdfd;
       color: #111;
       text-align: center;
-      padding-top: 80px;
     }
 
-    /* Logo styling */
+    /* --- NAVBAR --- */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 50px;
+      background: #fff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .navbar .brand {
+      font-weight: bold;
+      font-size: 1.5em;
+      color: #38b6ff;
+      text-transform: lowercase;
+    }
+
+    .menu {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 30px;
+    }
+
+    .menu a {
+      text-decoration: none;
+      color: #111;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    .menu a:hover {
+      color: #38b6ff;
+    }
+
+    /* --- MAIN SECTION --- */
     .logo {
-      width: 420px;       /* adjust as you like */
+      width: 420px;
       max-width: 85%;
       height: auto;
+      margin-top: 80px;
     }
 
     p {
@@ -26,11 +68,12 @@
       margin: 1.5em 0 2em 0;
     }
 
-    a {
+    /* --- BUTTON --- */
+    .btn {
       display: inline-block;
       margin: 10px;
       padding: 10px 20px;
-      background: #000;
+      background: #38b6ff;
       color: #fff;
       text-decoration: none;
       border-radius: 4px;
@@ -38,25 +81,28 @@
       transition: background 0.3s ease;
     }
 
-    a:hover {
-      background: #444;
+    .btn:hover {
+      background: #2a9ddf;
     }
   </style>
 </head>
 
 <body>
-  <!-- LOGO image -->
-  <!-- 👇 OPTION 1: if the file is in the same folder as index.html -->
-  <img class="logo" src="gdfashionstyle.png" alt="gdfashionstyle logo">
+  <!-- --- NAVBAR --- -->
+  <nav class="navbar">
+    <div class="brand">gdfashion.style</div>
+    <ul class="menu">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#shop">Shop</a></li>
+      <li><a href="#contact">Inquiries</a></li>
+    </ul>
+  </nav>
 
-  <!-- 👇 OPTION 2: if the file is in an /images folder -->
-  <!-- <img class="logo" src="images/gdfashion.style.png" alt="gdfashion.style logo"> -->
-
-  <p>G-Dragon Style</p>
-  <a href="https://www.instagram.com/gdfashion.style" target="_blank">Instagram</a>
+  <!-- --- MAIN SECTION --- -->
+  <section id="home">
+    <img class="logo" src="gdfashionstyle.png" alt="gdfashionstyle logo">
+    <p>G-Dragon Style</p>
+    <a class="btn" href="https://www.instagram.com/gdfashion.style" target="_blank">Instagram</a>
+  </section>
 </body>
 </html>
-
-
-
-
