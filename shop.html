@@ -10,13 +10,15 @@
       padding: 0;
       box-sizing: border-box;
     }
+    html, body {
+      height: 100%;
+    }
 
     body {
       font-family: 'Helvetica Neue', Arial, sans-serif;
       background-color: #fdfdfd;
       color: #111;
       text-align: center;
-      padding-top: 80px;
     }
 
     .navbar {
@@ -26,8 +28,10 @@
       padding: 20px 50px;
       background: #fff;
       box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-      position: sticky;
+      position: fixed;
       top: 0;
+      left: 0;
+      right: 0;
       z-index: 100;
     }
 
@@ -55,6 +59,10 @@
       color: #38b6ff;
     }
 
+    main {
+      margin-top: 120px;
+    }
+
     .logo {
       width: 420px;
       max-width: 85%;
@@ -78,7 +86,9 @@
     </ul>
   </nav>
 
-  <img class="logo" src="gdfashionstyle.png" alt="gdfashionstyle logo">
-  <p>Coming soon ✨</p>
+  <main>
+    <img class="logo" src="gdfashionstyle.png" alt="gdfashionstyle logo">
+    <p>Coming soon ✨</p>
+  </main>
 </body>
 </html>
